@@ -1,0 +1,35 @@
+.ningunOdontologo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: 35px 10px;
+}
+
+.ningunOdontologo .logoNoHay{
+    width: 80px;
+    height: 80px;
+}
+
+.ningunOdontologo .tituloNoHay{
+    margin-left: 25px;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Heebo', sans-serif;
+}
+
+.noHayFavoritosLight{
+    background-color: var(--color-blanco);
+}
+
+.noHayFavoritosDark{
+    background-color: var(--color-dark);
+}
+
+@media screen and (max-width: 800px) {
+    .ningunOdontologo .tituloNoHay{
+        font-size: 1rem;
+    }
+}

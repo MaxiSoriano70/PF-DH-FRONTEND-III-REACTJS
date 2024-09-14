@@ -1,0 +1,59 @@
+.clinicaCarousel{
+    height: 250px;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    filter: brightness(0.6);
+}
+
+.containerImg {
+    position: relative;
+}
+
+.textCarrusel {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 90%;
+    color: var(--color-blanco);
+}
+
+.textCarrusel .tituloCarrusel {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .clinicaCarousel{
+        height: 450px;
+    }
+
+    .textCarrusel {
+        width: 80%;
+    }
+
+    .textCarrusel .tituloCarrusel {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .clinicaCarousel{
+        height: 600px;
+    }
+
+    .textCarrusel {
+        width: 70%;
+    }
+
+    .textCarrusel .tituloCarrusel {
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+    }
+}

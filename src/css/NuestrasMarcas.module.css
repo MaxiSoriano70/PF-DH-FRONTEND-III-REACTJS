@@ -1,0 +1,75 @@
+.nuestrasMarcas{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nuestrasMarcas .marcaTitulo{
+    margin-bottom: 10px;
+}
+
+.nuestrasMarcas .marcaTitulo h3{
+    text-transform: uppercase;
+}
+
+.nuestrasMarcas .marcas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nuestrasMarcas .marcas .contenedorLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 175px;
+    height: 100px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 10px 10px;
+    box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+}
+
+.nuestrasMarcas .marcas .contenedorLogo .imgMarca{
+    width: 130px;
+    height: 55px;
+    aspect-ratio: 2.3636;
+}
+
+.contenedorLogoLight{
+    background-color: var(--color-blanco);
+}
+
+.contenedorLogoDark{
+    background-color: var(--color-dark);
+}
+
+@media (max-width:630px) {
+    .nuestrasMarcas .marcas .contenedorLogo{
+        width: 150px;
+        height: 75px;
+    }
+
+    .nuestrasMarcas .marcas .contenedorLogo .imgMarca{
+        width: 105px;
+        height: 30px;
+    }
+
+}
+
+@media (max-width:380px) {
+    .nuestrasMarcas .marcas .contenedorLogo{
+        width: 90px;
+        height: 55px;
+        border-radius: 15px;
+    }
+
+    .nuestrasMarcas .marcas .contenedorLogo .imgMarca{
+        width: 70px;
+        height: 30px;
+    }
+}

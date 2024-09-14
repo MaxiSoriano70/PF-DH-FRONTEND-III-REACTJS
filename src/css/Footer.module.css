@@ -1,0 +1,153 @@
+.footerClinica{
+    width: 100%;
+}
+
+.footerClinica .section1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.section1 .boxLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 .boxLogo .linkLogo{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 .boxLogo .linkLogo .imgLogo{
+    width: 55px;
+    height: 55px;
+    aspect-ratio: 16/9;
+}
+
+.section1 .boxLogo .linkLogo .pLogo{
+    padding: 0;
+    margin: 0 0 0 10px;
+    color: var(--color-blanco);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.section1 .boxNosotros{
+    width: 500px;
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.section1 .boxNosotros h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-blanco);
+}
+
+.section1 .boxNosotros p{
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: var(--color-blanco);
+}
+
+.section1 .boxRedes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 .boxRedes a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: var(--color-fondo);
+    color: var(--color-1);
+    margin: 7.5px;
+    padding: 9px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.section1 .boxRedes a:hover{
+    background-color: var(--color-complementario-I);
+    color: var(--color-blanco);
+    transition: 0.2s linear;
+}
+
+.section1 .boxRedes a .iconoRedes{
+    font-size: 1.5rem;
+}
+
+.footerClinica .section2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: var(--color-complementario-I);
+    color: var(--color-blanco);
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (max-width:720px){
+    .footerClinica .section1{
+        flex-direction: column ;
+    }
+
+    .section1 .boxLogo{
+        margin: 10px;
+    }
+
+    .section1 .boxNosotros{
+        width: auto;
+        margin: 10px;
+        padding: 0;
+        align-items: center;
+    }
+
+    .section1 .boxNosotros p{
+        text-align: center;
+    }
+}
+
+@media (max-width:400px){
+    .footerClinica .section1{
+        padding: 10px;
+    }
+
+    .section1 .boxLogo .linkLogo .imgLogo{
+        width: 35px;
+        height: 35px;
+    }
+
+    .section1 .boxLogo .linkLogo .pLogo{
+        font-size: 0.8rem;
+    }
+
+    .section1 .boxNosotros h3{
+        font-size: 1rem;
+    }
+
+    .section1 .boxNosotros p{
+        font-size: 0.8rem;
+    }
+
+    .section1 .boxRedes a .iconoRedes{
+        font-size: 1rem;
+    }
+
+    .footerClinica .section2{
+        font-size: 0.8rem;
+    }
+}
