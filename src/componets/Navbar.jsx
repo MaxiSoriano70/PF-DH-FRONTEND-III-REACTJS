@@ -1,4 +1,4 @@
-import styleNavbar from '../css/Navbar.module.css';
+import styleNavbar from '../css/NavBarPersonalizado.module.css';
 import logo from '../assets/img/odontologia.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon } from '@fortawesome/free-solid-svg-icons';

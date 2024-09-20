@@ -87,7 +87,6 @@ const Contacto = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
         if (nombreApellidoValido === 1 && emailValido === 1) {
             setShow(true);
             setTimeout(() => {
