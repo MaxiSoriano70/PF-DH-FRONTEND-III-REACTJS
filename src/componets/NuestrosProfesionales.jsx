@@ -33,7 +33,7 @@ const CardProfesional = (props) => {
 
     const tema = state.modoDarkLight ? (styleNuestroProfesionales.odontologoDark) : (styleNuestroProfesionales.odontologoLight);
     return (
-        <div className={`${styleNuestroProfesionales.cardVeterinario} ${tema}`} data-aos="flip-up">
+        <div className={`${styleNuestroProfesionales.cardVeterinario} ${tema}`}>
             <div className={styleNuestroProfesionales.contenedorImagen}>
                 <img className={styleNuestroProfesionales.imagenVet} src={props.imagen} alt={props.dentista.name}/>
             </div>

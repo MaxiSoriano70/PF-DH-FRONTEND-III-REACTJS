@@ -17,22 +17,22 @@ const NuestrasMarcas = () => {
                 <h3 className={styleNuestrasMarcas}>Nuestras marcas</h3>
             </article>
             <article className={styleNuestrasMarcas.marcas}>
-                <div className={`${styleNuestrasMarcas.contenedorLogo} ${tema}`} data-aos="flip-up">
+                <div className={`${styleNuestrasMarcas.contenedorLogo} ${tema}`}>
                     <img className={styleNuestrasMarcas.imgMarca} src={marca1} alt="d-700"/>
                 </div>
-                <div className={`${styleNuestrasMarcas.contenedorLogo} ${tema}`} data-aos="flip-up">
+                <div className={`${styleNuestrasMarcas.contenedorLogo} ${tema}`}>
                     <img className={styleNuestrasMarcas.imgMarca} src={marca2} alt="Hu-Friedy"/>
                 </div>
-                <div className={`${styleNuestrasMarcas.contenedorLogo} ${tema}`} data-aos="flip-up">
+                <div className={`${styleNuestrasMarcas.contenedorLogo} ${tema}`}>
                     <img className={styleNuestrasMarcas.imgMarca} src={marca3} alt="RTD"/>
                 </div>
-                <div className={`${styleNuestrasMarcas.contenedorLogo} ${tema}`} data-aos="flip-up">
+                <div className={`${styleNuestrasMarcas.contenedorLogo} ${tema}`}>
                     <img className={styleNuestrasMarcas.imgMarca} src={marca4} alt="Eagle"/>
                 </div>
-                <div className={`${styleNuestrasMarcas.contenedorLogo} ${tema}`} data-aos="flip-up">
+                <div className={`${styleNuestrasMarcas.contenedorLogo} ${tema}`}>
                     <img className={styleNuestrasMarcas.imgMarca} src={marca5} alt="voco"/>
                 </div>
-                <div className={`${styleNuestrasMarcas.contenedorLogo} ${tema}`} data-aos="flip-up">
+                <div className={`${styleNuestrasMarcas.contenedorLogo} ${tema}`}>
                     <img className={styleNuestrasMarcas.imgMarca} src={marca6} alt="Creality"/>
                 </div>
             </article>

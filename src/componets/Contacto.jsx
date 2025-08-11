@@ -105,7 +105,7 @@ const Contacto = () => {
     };
 
     return (
-        <div className="container is-max-tablet" data-aos="fade-up">
+        <div className="container is-max-tablet">
             {
                 show?
                     <NoHay img={logoEmail} mensaje={`Gracias ${usuarioDatos.nombreApellido} nos comunicaremos con Usted en la brevedad.`}/>
