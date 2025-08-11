@@ -1,94 +1,44 @@
-# ctd-fe3-final
+# 🦷 HealthDent
 
-Examen Final de Frontend III
+Proyecto responsive desarrollado en **Digital House** como parte de la formación **Certified Tech Developer (becado)**.  
+Aplicación web enfocada en la temática de la salud dental que consume información de una API para mostrar dentistas, detalles, formulario de contacto y gestión de favoritos, con diseño adaptable a dispositivos desktop, tablet y móviles.
 
-## Indice
+---
 
-- [Requisitos](#requisitos)
-  - [Condiciones mínimas de aprobación](#condiciones-mínimas-de-aprobación)
-  - [Aspectos que modifican la valoración final de la nota](#aspectos-que-modifican-la-valoración-final-de-la-nota)
-- [Funcionalidades](#funcionalidades)
-- [Desarrollo](#desarrollo)
-- [API](#api)
-- [Entrega](#entrega)
-  - [Fecha de Entrega](#fecha-de-entrega)
-  - [Formato de Entrega](#formato-de-entrega)
+## 🚀 Tecnologías Utilizadas
 
-## Requisitos
+- **React** con Hooks (`useState`, `useReducer`, `useContext`) para manejo de estado y contexto global.  
+- **React Router** para navegación entre rutas.  
+- **fetch / axios** para consumo de API externa.  
+- **localStorage** para persistencia de dentistas favoritos en sesión.  
+- CSS modular para estilos con soporte tema claro/oscuro.
 
-Es indispensable clonar este proyecto en un repositorio público, para poder trabajar de forma _individual_ o en _dupla_. No se aceptarán proyectos que se hayan realizado sin partir de este template. Para eso deberás crear un repositorio con el nombre "ctd-esp-fe3-final" en tu cuenta de Github y luego seguir los siguientes pasos en tu terminal
+---
 
-```
-# clona el repositorio del final en tu computadora
-git clone https://github.com/Frontend-III/fe3-final
+## 📌 Características principales
 
-# ingresa al directorio del final
-cd fe3-final
+- Contexto global con tema claro/oscuro que se puede alternar mediante un botón.  
+- Rutas definidas:  
+  - `/home`: muestra cards con dentistas obtenidos de la API.  
+  - `/detalle/:id`: muestra detalle del dentista seleccionado.  
+  - `/contacto`: formulario con validaciones para contacto (nombre y email).  
+  - `/favoritos`: muestra dentistas destacados guardados en localStorage.  
+- Funcionalidad para agregar y quitar dentistas destacados usando `useReducer` y persistencia en localStorage.  
+- Navbar y footer presentes en todas las rutas, con navegación y cambio de tema.  
+- Manejo de mensajes de error y éxito en el formulario de contacto.
 
-# elimina los links al repositorio de DH
-git remote remove origin
+---
 
-# Agrega el link al repositorio de tu cuenta de github, reemplaza <tuusuario> por tu cuenta
-git remote add origin https://github.com/<tuusuario>/fe3-final
+---
 
-# Sube el template inicial a tu repositorio de github
-git push -u origin main
-```
+## 🌐 Demo en línea
 
-### Condiciones de aprobación
+[Ver proyecto en vivo](https://clinica-odontologica-dh.netlify.app/)
 
-Las siguientes condiciones son requisitos mínimos necesarios para la aprobación del final:
+---
 
-- **Cumplir con todas las funcionalidades obligatorias**
-- Solo se podrán utilizar las librerías que se detallan en este README. Ver [Dependencias](docs/desarrollo.md#dependencias)
-- No se considerará realizada cualquier funcionalidad que sea implementada utilizando una librería distinta a las permitidas.
-- Deberá ser desarrollada utilizando Javascript con React.js como libreria.
-- Se espera que la página de Contacto, contenga los flujos de validación necesarios (minimo 2 validaciones), para un correcto submit del formulario.
-- En los casos en que se requiera dar estilos a componentes, deberá realizarse teniendo en cuenta el theme del contexto global.
+## 📬 Contacto
 
-### Aspectos que modifican la valoración final de la nota
-
-Los siguientes aspectos son extras al requisito mínimo de aprobación que serán tenidos en cuenta para aumentar la nota final, siempre y cuando su implementación sea correcta:
-
-**Validaciones**
-
-- Una validación para cada campor es suficiente, pueden ser "manuales" o con expreciones regulares. Lo importante es el correcto manejo de errores y submit.
-
-**Funcionalidad de destacados**
-
-- Se valorará funcionalidades extra a esta feature, como lo pueden ser el eliminar de destacadados, manejo de errores al intentar agregar repetidos y reseteo total de los destacados.
-
-
-**Estilos**
-
-- Se valorará el estilado de demas apartados de la App (por fuera del estilado obligatorio de las rutas en base al theme)
-
-**Buenas Prácticas**
-
-- Se prestará especial atención al uso de buenas prácticas, mejoras de performance (implementando useMemo) y la reutilizacion de codigo
-
-## Funcionalidades
-
-Ver [Funcionalidades](docs/funcionalidades.md).
-
-## Desarrollo
-
-Ver [Desarrollo](docs/desarrollo.md).
-
-## API
-
-La API a utilizar sera la siguiente:
-`https://jsonplaceholder.typicode.com/users`
-
-Y para cada dentista en especifico:
-`https://jsonplaceholder.typicode.com/users/:id`
-
-### Formato de Entrega
-
-- No deberan cambiar los nombres ni ubicacion de las variables/componentes/context que vienen con el repo base
-
-Se aceptará la entrega mediante la submisión de la URL de su repositorio clonado
-
-El link al Google Form para la submisión será enviado por el profesor a cargo de la comisión.
-
-Mucha suerte y éxitos!
+Desarrollado por **Maximiliano Soriano** 🧑‍💻  
+📧 Email: [maxi.soriano.70.23@gmail.com](mailto:maxi.soriano.70.23@gmail.com)  
+🔗 LinkedIn: [linkedin.com/in/maximilianosoriano](https://www.linkedin.com/in/maximiliano-soriano/)
